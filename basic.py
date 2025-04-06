@@ -23,7 +23,7 @@ def index():
 
     if form.validate_on_submit():
         breed = form.breed.data
-        form.breed.date = '' #Storing an empty string in the variable
+        form.breed.data = '' #Storing an empty string in the variable
 
     return render_template('index.html',form=form,breed=breed)
 
